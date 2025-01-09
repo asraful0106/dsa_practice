@@ -43,7 +43,7 @@ public class TransformTheSum {
         int leftChild = transformTheSum(root.leftNode);
         int rightChild = transformTheSum(root.rightNode);
         int currentLeft = root.leftNode == null ? 0 : root.leftNode.data;
-        int currentRight = root.rightNode == null ? 0 : root.leftNode.data;
+        int currentRight = root.rightNode == null ? 0 : root.rightNode.data;
         int data = root.data;
         root.data = currentLeft+leftChild+currentRight+rightChild;
         return data;
