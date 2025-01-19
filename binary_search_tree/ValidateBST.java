@@ -1,7 +1,5 @@
 package binary_search_tree;
 
-import java.util.ArrayList;
-
 public class ValidateBST {
     static class Node {
         int data;
