@@ -55,7 +55,7 @@ public class CycleDetectionUnderected {
         for (int i = 0; i < graph[curr].size(); i++) {
             Edge e = graph[curr].get(i);
 
-            // if destination is visited and
+            // if destination is not visited
             if (!isVisited[e.dstNode]) {
                 if (detectCycleUtill(graph, isVisited, e.dstNode, curr))
                     return true;
